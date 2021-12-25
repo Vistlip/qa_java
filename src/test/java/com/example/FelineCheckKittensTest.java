@@ -9,11 +9,11 @@ import static org.junit.Assert.assertEquals;
 
 
 @RunWith(Parameterized.class)
-public class FelineTestCheckKittens {
+public class FelineCheckKittensTest {
     private final int kittens;
     private final int expectedKittens;
 
-    public FelineTestCheckKittens(int kittens, int expectedKittens) {
+    public FelineCheckKittensTest(int kittens, int expectedKittens) {
         this.kittens = kittens;
         this.expectedKittens = expectedKittens;
     }

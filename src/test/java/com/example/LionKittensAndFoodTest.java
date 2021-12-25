@@ -12,7 +12,7 @@ import java.util.List;
 
 
 @RunWith(MockitoJUnitRunner.class)
-public class LionTestKittensAndFood extends TestCase {
+public class LionKittensAndFoodTest extends TestCase {
     @Mock
     Feline feline;
     private static final String sexLion = "Самец";
