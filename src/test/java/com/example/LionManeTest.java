@@ -8,13 +8,13 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class LionManeTest {
-    private final String sex;
-    private final boolean mane;
+    private final String Sex;
+    private final boolean Mane;
     Feline felineLion;
 
     public LionManeTest(String sex, boolean mane) {
-        this.sex = sex;
-        this.mane = mane;
+        this.Sex = sex;
+        this.Mane = mane;
     }
 
     @Parameterized.Parameters
@@ -26,10 +26,10 @@ public class LionManeTest {
     }
 
     @Test
-    public void CheckLion() throws Exception {
-        Lion lion = new Lion(sex, felineLion);
+    public void checkLion() throws Exception {
+        Lion lion = new Lion(Sex, felineLion);
         boolean actualMane = lion.doesHaveMane();
-        assertEquals(mane, actualMane);
+        assertEquals(Mane, actualMane);
 
     }
 

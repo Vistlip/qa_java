@@ -6,8 +6,8 @@ public class Lion extends Feline {
     private final Feline felineLion;
     boolean hasMane;
 
-<span class="fc" id="L9">    public Lion(String sex, Feline felineLion) throws Exception {</span>
-<span class="fc" id="L10">        this.felineLion = felineLion;</span>
+<span class="fc" id="L9">    public Lion(String sex, Feline feline) throws Exception {</span>
+<span class="fc" id="L10">        this.felineLion = feline;</span>
 <span class="fc bfc" id="L11" title="All 2 branches covered.">        if (&quot;Самец&quot;.equals(sex)) {</span>
 <span class="fc" id="L12">            hasMane = true;</span>
 <span class="pc bpc" id="L13" title="1 of 2 branches missed.">        } else if (&quot;Самка&quot;.equals(sex)) {</span>
@@ -28,7 +28,7 @@ public class Lion extends Feline {
     }
 
     public List&lt;String&gt; getFood() throws Exception {
-<span class="fc" id="L31">        return felineLion.getFood(&quot;Хищник&quot;);</span>
+<span class="nc" id="L31">        return felineLion.getFood(&quot;Хищник&quot;);</span>
     }
 
 }

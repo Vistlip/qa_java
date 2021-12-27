@@ -6,8 +6,8 @@ public class Lion extends Feline {
     private final Feline felineLion;
     boolean hasMane;
 
-    public Lion(String sex, Feline felineLion) throws Exception {
-        this.felineLion = felineLion;
+    public Lion(String sex, Feline feline) throws Exception {
+        this.felineLion = feline;
         if ("Самец".equals(sex)) {
             hasMane = true;
         } else if ("Самка".equals(sex)) {

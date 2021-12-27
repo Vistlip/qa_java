@@ -11,7 +11,7 @@ import java.util.List;
 public class AnimalTest {
 
     @Test
-    public void CheckGetFoodPredator() throws Exception {
+    public void checkGetFoodPredator() throws Exception {
         List<String> expectedListFoodPredator = Arrays.asList("Животные", "Птицы", "Рыба");
         Animal animal = new Animal();
         List<String> actualListFoodPredator = animal.getFood("Хищник");
@@ -20,7 +20,7 @@ public class AnimalTest {
     }
 
     @Test
-    public void CheckGetFoodHerbivores() throws Exception {
+    public void checkGetFoodHerbivores() throws Exception {
         List<String> expectedListFoodHerbivores = Arrays.asList("Трава", "Различные растения");
         Animal animal = new Animal();
         List<String> actualListFoodHerbivores = animal.getFood("Травоядное");
@@ -28,7 +28,7 @@ public class AnimalTest {
     }
 
     @Test
-    public void CheckGetFamily() {
+    public void checkGetFamily() {
         String expectedFamily = "Существует несколько семейств: заячьи, беличьи, мышиные, кошачьи, псовые, медвежьи, куньи";
         Animal animal = new Animal();
         String actualFamily = animal.getFamily();

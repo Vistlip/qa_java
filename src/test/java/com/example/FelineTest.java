@@ -13,7 +13,7 @@ public class FelineTest {
 
 
     @Test
-    public void CheckEatMeat() throws Exception{
+    public void checkEatMeat() throws Exception{
         List<String> expectedListFood = Arrays.asList("Животные", "Птицы", "Рыба");
         Feline feline = new Feline();
         List<String> actualListFood = feline.eatMeat();
@@ -21,7 +21,7 @@ public class FelineTest {
     }
 
     @Test
-    public void CheckGetFamily() {
+    public void checkGetFamily() {
         String expectedFamily = "Кошачьи";
         Feline feline = new Feline();
         String actualFamily = feline.getFamily();
@@ -31,7 +31,7 @@ public class FelineTest {
 
 
     @Test
-    public void CheckDefaultGetKittens() {
+    public void checkDefaultGetKittens() {
         int expectedKittens = 1;
         Feline feline = new Feline();
         int actualKittens = feline.getKittens();
