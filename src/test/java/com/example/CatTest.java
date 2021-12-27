@@ -14,22 +14,23 @@ import java.util.List;
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest extends TestCase {
     @Mock
-    Feline feline;
+    Predator predator;
 
     @Test
-    public void CheckGetSound() {
+    public void checkGetSound() {
         String expectedSound = "Мяу";
+        Feline feline = new Feline();
         Cat cat = new Cat(feline);
         String actualSound = cat.getSound();
         assertEquals(expectedSound, actualSound);
     }
 
     @Test
-    public void CheckGetFood() throws Exception {
+    public void checkGetFood() throws Exception {
         List<String> expectedListFood = Arrays.asList("Животные", "Птицы", "Рыба");
-        Cat cat = new Cat(feline);
-        Mockito.when(cat.getFood()).thenReturn(expectedListFood);
-        List<String> actualListFood = cat.getFood();
+        String Cat = "Хищник";
+        Mockito.when(predator.eatMeat()).thenReturn(expectedListFood);
+        List<String> actualListFood = predator.eatMeat();
         assertEquals(expectedListFood, actualListFood);
     }
 }

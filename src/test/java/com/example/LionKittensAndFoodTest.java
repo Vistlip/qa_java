@@ -19,7 +19,7 @@ public class LionKittensAndFoodTest extends TestCase {
 
 
     @Test
-    public void CheckGetKittensForLion() throws Exception {
+    public void checkGetKittensForLion() throws Exception {
         int expectedKittensCount = 1;
         Mockito.when(feline.getKittens()).thenReturn(expectedKittensCount);
         Lion lion = new Lion("Самка", feline);
@@ -28,11 +28,11 @@ public class LionKittensAndFoodTest extends TestCase {
     }
 
     @Test
-    public void CheckGetFoodForLion() throws Exception{
+    public void checkGetFoodForLion() throws Exception{
         List<String> expectedListFood = Arrays.asList("Животные", "Птицы", "Рыба");
-        Lion lion = new Lion("Самец", feline);
-        Mockito.when(lion.getFood()).thenReturn(expectedListFood);
-        List<String> actualListFood = lion.getFood();
+        String Cat = "Хищник";
+        Mockito.when(feline.getFood(Cat)).thenReturn(expectedListFood);
+        List<String> actualListFood = feline.getFood(Cat);
         assertEquals(expectedListFood, actualListFood);
 
     }

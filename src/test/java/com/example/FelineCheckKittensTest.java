@@ -31,7 +31,7 @@ public class FelineCheckKittensTest {
 
 
     @Test
-    public void CheckKittens() {
+    public void checkKittens() {
         Feline feline = new Feline();
         int actualKittens = feline.getKittens(kittens);
         assertEquals(expectedKittens, actualKittens);
